@@ -1,0 +1,48 @@
+.box {
+    border:2px solid black;
+    margin: 10px;
+    padding: 40px;
+    text-align: center;
+}
+
+.text-box {
+    border:2px solid blue;
+    text-align: center;
+    padding:40px;
+    margin: 10px;
+}
+
+.flex-container { /*this is a class that can have any name as long as it is consistent throughout your files*/ /*this container in particular is specified as the container we will be putting elements in */
+    height: 1000px;
+    display: flex; /*display property positions things in a screen or within an element. flex and grid are the most common display "properties/attributes"*/ 
+    flex-direction: column; /*flex can have properties to it like flex-direction, which specifies the direction in which child elements of flex container (div element) flow, text in orange specifies the flex-direction property in this case*/
+    justify-content: center; /*justify-content property specifies spacing of child elements/is everything squished at the start or is everything squished at the end or is there even space between each element throughout the span of the div - specifies where children elements will be positioned along major axes/left and right axes*/
+    /*center a div/center elements is commonly asked as a technical interview question*/
+    align-items: center; /* aligns child elements along minor axis*/
+    /*align a piece of text:*/
+        /*text-align: center;
+        justify-content: center;*/
+    border: 1px solid black;
+    /*last 8 lines of code will most defo be used in every website you build*/
+
+    /*important note: axes of justify-content and align-items depends on flow of items not orientation of div. when flex-direction changes from row to column (or vica versa), flow changes by 90 degrees so axes change by 90 degrees so roles of justify-content and align-items switches with row to column change. 
+    for columns, justify-content does top/bottom and align-items does left/right. for row, justify-content does left/right and align-items does top/bottom. this is why axes are called major/minor axes and not x/y axes. */
+
+    /* main takeaways: when you want flex, display flex; flex-direction for direction you want elements to flow in; align-items and justify-content have to do with position of all elements/group of elements*/
+}
+
+.flex-item {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+
+.flex-item2 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+}
